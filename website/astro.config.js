@@ -5,7 +5,7 @@ import astroI18next from "astro-i18next";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-i18next.yassinedoghri.com/",
+  site: "https://jeffwcx.github.io/astro-i18next/",
   integrations: [
     sitemap({
       i18n: {

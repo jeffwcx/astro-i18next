@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yassinedoghri/astro-i18next.git"
+    "url": "https://github.com/jeffwcx/astro-i18next.git"
   },
   "files": [
     "src",
