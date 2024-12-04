@@ -88,7 +88,6 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.1",
     "@types/fs-extra": "^11.0.1",
     "@types/yargs": "^17.0.22",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
@@ -116,7 +115,7 @@
     "lint-staged": "^13.1.2",
     "prettier": "2.8.4",
     "prettier-plugin-astro": "^0.8.0",
-    "semantic-release": "^20.1.1",
+    "semantic-release": "^24.2.0",
     "typescript": "^4.9.5",
     "vitest": "^2.1.8",
     "yargs": "^17.7.1"
