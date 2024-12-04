@@ -60,15 +60,14 @@
     "localization"
   ],
   "author": {
-    "name": "Yassine Doghri",
-    "email": "yassine@doghri.fr",
-    "url": "https://yassinedoghri.com/"
+    "name": "jeffwcx",
+    "email": "jeffwcx@icloud.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yassinedoghri/astro-i18next/issues"
+    "url": "https://github.com/jeffwcx/astro-i18next/issues"
   },
-  "homepage": "https://astro-i18next.yassinedoghri.com/",
+  "homepage": "https://jeffwcx.github.io/astro-i18next/",
   "peerDependencies": {
     "astro": ">=1.0.0"
   },
