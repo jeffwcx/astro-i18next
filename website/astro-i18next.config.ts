@@ -1,4 +1,4 @@
-import type { AstroI18nextConfig } from "astro-i18next";
+import type { AstroI18nextConfig } from "@jeffwcx/astro-i18next";
 
 const config: AstroI18nextConfig = {
   defaultLocale: "en",

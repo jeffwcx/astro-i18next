@@ -13,7 +13,6 @@ const { href: canonicalUrl } = Astro.url;
   openGraph={{
     basic: {
       title: t("seo.ogTitle"),
-      description: t("seo.description"),
       type: "website",
       image:
         "https://astro-i18next.yassinedoghri.com/assets/images/open-graph.jpg",
@@ -21,8 +20,8 @@ const { href: canonicalUrl } = Astro.url;
     },
     image: {
       alt: t("seo.ogImageAlt"),
-      width: "1200",
-      height: "630",
+      width: 1200,
+      height: 630,
       type: "image/jpeg",
     },
   }}

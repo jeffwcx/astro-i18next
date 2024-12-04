@@ -143,7 +143,7 @@ Here's a quick tutorial to get you going:
    ---
    // src/pages/index.astro
    import i18next, { t } from "i18next";
-   import { Trans, HeadHrefLangs } from "astro-i18next/components";
+   import { Trans, HeadHrefLangs } from "@jeffwcx/astro-i18next/components";
    ---
 
    <html lang={i18next.language}>
@@ -336,7 +336,7 @@ strings. Inspired by
 
 ```astro
 ---
-import { Trans } from "astro-i18next/components";
+import { Trans } from "@jeffwcx/astro-i18next/components";
 ---
 
 <Trans i18nKey="superCoolKey">
@@ -366,7 +366,7 @@ Unstyled custom select component to choose amongst supported locales.
 
 ```astro
 ---
-import { LanguageSelector } from "astro-i18next/components";
+import { LanguageSelector } from "@jeffwcx/astro-i18next/components";
 ---
 
 <LanguageSelector showFlag={true} class="my-select-class" />
@@ -395,7 +395,7 @@ about its language and region variants. To know more, see
 ```astro
 ---
 import i18next from "i18next";
-import { HeadHrefLangs } from "astro-i18next/components";
+import { HeadHrefLangs } from "@jeffwcx/astro-i18next/components";
 ---
 
 <html lang={i18next.language}>
@@ -533,7 +533,7 @@ src
    ```astro
    ---
    import { t, setDefaultNamespace } from "i18next";
-   import { Trans } from "astro-i18next/components";
+   import { Trans } from "@jeffwcx/astro-i18next/components";
 
    setDefaultNamespace("home");
    ---

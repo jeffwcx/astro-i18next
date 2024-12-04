@@ -17,6 +17,6 @@
       "templates:*": ["components/templates/*.astro"]
     }
   },
-  "include": ["src/**/*.astro"],
-  "exclude": ["dist"]
+  "include": ["./src/**/*.astro"],
+  "exclude": ["./dist"]
 }

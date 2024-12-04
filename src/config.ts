@@ -46,7 +46,7 @@ export const astroI18nextConfigBuilder = (
 export const flattenRoutes = (
   routes: AstroI18nextConfig["routes"],
   previous: string[] = [],
-  translatedPrevious: string[] = [],
+  translatedPrevious: (string | Routes)[] = [],
   prevResult: AstroI18nextConfig["flatRoutes"] = null
 ): AstroI18nextConfig["flatRoutes"] => {
   let result = prevResult || {};

@@ -51,9 +51,6 @@
       ]
     }
   },
-  "bin": {
-    "astro-i18next": "./dist/cli/index.js"
-  },
   "keywords": [
     "astro-component",
     "seo",
@@ -78,10 +75,10 @@
   "dependencies": {
     "@proload/core": "^0.3.3",
     "@proload/plugin-tsm": "^0.2.1",
-    "i18next": "^22.4.10",
-    "i18next-browser-languagedetector": "^7.0.1",
-    "i18next-fs-backend": "^2.1.1",
-    "i18next-http-backend": "^2.1.1",
+    "i18next": "^24.0.5",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-fs-backend": "^2.6.0",
+    "i18next-http-backend": "^3.0.1",
     "iso-639-1": "^2.1.15",
     "locale-emoji": "^0.3.0",
     "pathe": "^1.1.0"
@@ -120,7 +117,7 @@
     "prettier": "2.8.4",
     "prettier-plugin-astro": "^0.8.0",
     "semantic-release": "^24.2.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.7.2",
     "vitest": "^2.1.8",
     "yargs": "^17.7.1"
   },
