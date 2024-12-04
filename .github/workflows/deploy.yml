@@ -23,10 +23,10 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          pnpm install --frozen-lockfile
+          pnpm install
           pnpm run build
           cd website
-          pnpm install --frozen-lockfile
+          pnpm install
           pnpm run build
 
       - name: Deploy 🚀
