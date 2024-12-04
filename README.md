@@ -62,19 +62,19 @@ translate your astro websites!
 ### 1. Install
 
 ```bash
-npm install astro-i18next
+npm install @jeffwcx/astro-i18next
 ```
 
 or
 
 ```bash
-pnpm add astro-i18next
+pnpm add @jeffwcx/astro-i18next
 ```
 
 or
 
 ```bash
-yarn add astro-i18next
+yarn add @jeffwcx/astro-i18next
 ```
 
 ### 2. Configure
@@ -83,7 +83,7 @@ yarn add astro-i18next
 
    ```js
    import { defineConfig } from "astro/config";
-   import astroI18next from "astro-i18next";
+   import astroI18next from "@jeffwcx/astro-i18next";
 
    export default defineConfig({
      integrations: [astroI18next()],
