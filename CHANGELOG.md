@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jeffwcx/astro-i18next/compare/v1.0.0...v1.1.0) (2024-12-04)
+
+### Features
+
+- updat exports
+  ([c80d851](https://github.com/jeffwcx/astro-i18next/commit/c80d85138f5ead8d46c4aedde5a3e809c2f09681))
+
 # 1.0.0 (2024-12-04)
 
 ### Bug Fixes
