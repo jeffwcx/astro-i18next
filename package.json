@@ -1,6 +1,9 @@
 {
   "name": "@jeffwcx/astro-i18next",
   "version": "1.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "An astro integration of i18next + some utility components to help you translate your astro websites!",
   "scripts": {
     "test": "vitest",
