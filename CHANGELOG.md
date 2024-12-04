@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/jeffwcx/astro-i18next/compare/v1.1.0...v1.2.0) (2024-12-04)
+
+### Features
+
+- upgrade typescript,i18next,etc
+  ([534f712](https://github.com/jeffwcx/astro-i18next/commit/534f7122158489f73dd126243fdc9b10c33ba2ce))
+
 # [1.1.0](https://github.com/jeffwcx/astro-i18next/compare/v1.0.0...v1.1.0) (2024-12-04)
 
 ### Features
