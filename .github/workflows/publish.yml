@@ -21,7 +21,7 @@ jobs:
       - name: Install pnpm 📦
         uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
 
       - name: Quality check 👌
         run: |
@@ -45,7 +45,7 @@ jobs:
       - name: Install pnpm 📦
         uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
 
       - name: Bundle 📦
         run: |
@@ -74,11 +74,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-  
+
       - name: Install pnpm 📦
         uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
 
       - name: Download bundle artifact 📥
         uses: actions/download-artifact@v4
