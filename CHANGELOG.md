@@ -1,3 +1,194 @@
+# 1.0.0-beta.1 (2024-12-04)
+
+### Bug Fixes
+
+- add depth level to relative import declarations
+  ([02ddb76](https://github.com/jeffwcx/astro-i18next/commit/02ddb7614391e07975d3422357e5f0140ed48ec8))
+- add isFileHidden function + tests to prevent missing hidden files
+  ([7dcd0aa](https://github.com/jeffwcx/astro-i18next/commit/7dcd0aad9adfb43f47446f8b2ca1059eafbc7bf9))
+- add levels to Astro.global pattern and scripts' import statements
+  ([9d88d79](https://github.com/jeffwcx/astro-i18next/commit/9d88d79e5d24d8b4663501f7436f512d02d114d3))
+- add levels to relative path in script tag
+  ([1203d42](https://github.com/jeffwcx/astro-i18next/commit/1203d4232d3edcf833a43a10b0d837a35444531a)),
+  closes [#129](https://github.com/jeffwcx/astro-i18next/issues/129)
+- add missing `script` to regex in resolveRelativePathsLevel
+  ([9288efe](https://github.com/jeffwcx/astro-i18next/commit/9288efef47dbfadce8b02de0b8e3222b0d518537)),
+  closes [#129](https://github.com/jeffwcx/astro-i18next/issues/129)
+- **build:** remove components and utils from build + set components export to
+  src
+  ([bb7ab0f](https://github.com/jeffwcx/astro-i18next/commit/bb7ab0f318feeb7bd4243ea805d09f55634b1ecf)),
+  closes [#18](https://github.com/jeffwcx/astro-i18next/issues/18)
+- **cli:** filter out any file other than .astro files for generate
+  ([c34fa07](https://github.com/jeffwcx/astro-i18next/commit/c34fa070eb1bfd9414e5713c8638be2c3cf90ebf))
+- **example:** add isCurrentPath function comparing current url to localized
+  path
+  ([ee90afb](https://github.com/jeffwcx/astro-i18next/commit/ee90afb2dc44168a343e627a3c9cea1f369f8da8))
+- expect locales folder to be in astro's publicDir config by default
+  ([ec72ff3](https://github.com/jeffwcx/astro-i18next/commit/ec72ff36150960f56df760b64aed49af00f10fe3)),
+  closes [#64](https://github.com/jeffwcx/astro-i18next/issues/64)
+- **generate:** ignore any directories/files that begin with an underscore
+  ([a7e6f08](https://github.com/jeffwcx/astro-i18next/commit/a7e6f08710c4da71b4b595e6411494abb135d64f)),
+  closes [#43](https://github.com/jeffwcx/astro-i18next/issues/43)
+- **generate:** inject changeLanguage statement after imports and before
+  frontmatter logic
+  ([4d74e0b](https://github.com/jeffwcx/astro-i18next/commit/4d74e0b3d1d03c40ca9090b82fb4d171cd4b84a0)),
+  closes [#23](https://github.com/jeffwcx/astro-i18next/issues/23)
+- **generate:** replace isLocale check with user defined locales to prevent
+  nested folders generation
+  ([a598e2e](https://github.com/jeffwcx/astro-i18next/commit/a598e2ebb7b1e3c7a2073ed626aae39fe5ef580b)),
+  closes [#56](https://github.com/jeffwcx/astro-i18next/issues/56)
+- get astro pages' full paths using fdir's withFullPaths instead of
+  withRelativePaths
+  ([92a5178](https://github.com/jeffwcx/astro-i18next/commit/92a51780956d02451870eed5fa2ec3d996eb33ec)),
+  closes [#135](https://github.com/jeffwcx/astro-i18next/issues/135)
+- handle localizePath trailing slash depending on astro's trailingSlash config
+  ([880666c](https://github.com/jeffwcx/astro-i18next/commit/880666c83b7ef6ac304658546ce08407ddea4db2)),
+  closes [#119](https://github.com/jeffwcx/astro-i18next/issues/119)
+- **i18next-server:** load locale files synchronously
+  ([e7892e2](https://github.com/jeffwcx/astro-i18next/commit/e7892e20a63b7b639b390c4f6487a8757bfbf157))
+- import localizeUrl in HeadHrefLangs from index for access to astro-i18next
+  runtime config
+  ([5e3b96c](https://github.com/jeffwcx/astro-i18next/commit/5e3b96c4a38ce9c726663a74c7ebdc45e83113e2)),
+  closes [#65](https://github.com/jeffwcx/astro-i18next/issues/65)
+- include LanguageSelector component to release files
+  ([efa1961](https://github.com/jeffwcx/astro-i18next/commit/efa19613f3341dde2afbd794b43fcd9e73d6f1b1))
+- **language-selector:** replace country-code-to-flag-emoji dependency with
+  locale-emoji
+  ([6aee21d](https://github.com/jeffwcx/astro-i18next/commit/6aee21d6064cd596f6bff1bf6b670cc58ef0b263)),
+  closes [#14](https://github.com/jeffwcx/astro-i18next/issues/14)
+- **plugins:** normalize named imports to call in i18next's use function
+  ([6928ddc](https://github.com/jeffwcx/astro-i18next/commit/6928ddc248465a10fa18764ad903c2fb8e02ddb5)),
+  closes [#38](https://github.com/jeffwcx/astro-i18next/issues/38)
+- remove trailing slash from localized path
+  ([1998309](https://github.com/jeffwcx/astro-i18next/commit/19983092a1b71fb962a924dccd19fbbe40b58d62)),
+  closes [#77](https://github.com/jeffwcx/astro-i18next/issues/77)
+- replace @proload/plugin-typescript with @proload/plugin-tsm
+  ([6f639ee](https://github.com/jeffwcx/astro-i18next/commit/6f639ee9b3f5ee121d6f7bfad90b2088f4112688))
+- replace language-flag-colors with country-code-to-flag-emoji dependency
+  ([7d4d408](https://github.com/jeffwcx/astro-i18next/commit/7d4d408577e48d8fb860ae897a5573f2ec7c3beb))
+- reset iso-639-1 and locale-emoji as dependencies
+  ([b2863d7](https://github.com/jeffwcx/astro-i18next/commit/b2863d74ed74b750fda868e3039308e9daa6022d)),
+  closes [#32](https://github.com/jeffwcx/astro-i18next/issues/32)
+- resolve astroFileFullPath to extract relative astroFilePath on Windows
+  ([c23cd27](https://github.com/jeffwcx/astro-i18next/commit/c23cd276753db5a5515ced8f33c745f6f2749a49)),
+  closes [#135](https://github.com/jeffwcx/astro-i18next/issues/135)
+- Rollup failed to resolve import 'types'
+  ([#33](https://github.com/jeffwcx/astro-i18next/issues/33))
+  ([2807989](https://github.com/jeffwcx/astro-i18next/commit/2807989b1d3164b1ce7e2a1298dc46d19b63e985))
+- take astro base path into account when using localizePath or localizeUrl
+  functions
+  ([5c35eaf](https://github.com/jeffwcx/astro-i18next/commit/5c35eaf27b4f3ebc216ba943ef46e0cee1ca468c)),
+  closes [#27](https://github.com/jeffwcx/astro-i18next/issues/27)
+- **trans component:** import utility functions from index
+  ([eea0d5d](https://github.com/jeffwcx/astro-i18next/commit/eea0d5d9c65552739a41a425621ecd57fd07df22))
+- type definitions for exported astro components
+  ([bb60949](https://github.com/jeffwcx/astro-i18next/commit/bb609499c1002dca13849ce0f500940b31c1482b)),
+  closes [#18](https://github.com/jeffwcx/astro-i18next/issues/18)
+- update package.json's exports value
+  ([86d7cf9](https://github.com/jeffwcx/astro-i18next/commit/86d7cf96a91176c75235ed2553bacbdf68217c61))
+- update publish workflow to include bundled package in dist
+  ([5428dc3](https://github.com/jeffwcx/astro-i18next/commit/5428dc34a5f6729da3b2b81ab1a49a03a4811a32))
+- update types import to relative
+  ([#58](https://github.com/jeffwcx/astro-i18next/issues/58))
+  ([44a5422](https://github.com/jeffwcx/astro-i18next/commit/44a54223cff9f57686ec0830529f26304a763a50))
+- update utils path to relative in Trans component
+  ([c767fe3](https://github.com/jeffwcx/astro-i18next/commit/c767fe3c174212358e285e1b85ebfff3ce9411e1))
+- use fileURLToPath to normalize publicDir pathname accross operating systems
+  ([3c07d6a](https://github.com/jeffwcx/astro-i18next/commit/3c07d6af4d1eb0beb959b35e19768ba2ad7a0037)),
+  closes [#79](https://github.com/jeffwcx/astro-i18next/issues/79)
+- use unjs/pathe to resolve cross OS public path
+  ([ad1d24f](https://github.com/jeffwcx/astro-i18next/commit/ad1d24f0ac14b16b7c83d255547a8bd6c04f5223)),
+  closes [#105](https://github.com/jeffwcx/astro-i18next/issues/105)
+- use unjs/pathe to resolve generated localized files paths across OS
+  ([da80a8d](https://github.com/jeffwcx/astro-i18next/commit/da80a8d9660ac75b7dfc20d6e88d9df8f60154bf)),
+  closes [#135](https://github.com/jeffwcx/astro-i18next/issues/135)
+- **workflow:** download bundle artifact into dist path to include it into
+  package
+  ([3fb5a78](https://github.com/jeffwcx/astro-i18next/commit/3fb5a781051f38c1c210d5c70a6533f1e8d34469))
+
+### Features
+
+- add astro integration --> initialize i18next upon astro:config:setup
+  ([78ec744](https://github.com/jeffwcx/astro-i18next/commit/78ec7444439ac6d31b0e66cc2aa10007d83ac5c1))
+- add HeadHrefLangs component + localizeUrl util function
+  ([cd4095e](https://github.com/jeffwcx/astro-i18next/commit/cd4095ec7b42d7a4759ef980ba76515549b21f75))
+- add i18next namespaces + validate config before processing it
+  ([10b40cc](https://github.com/jeffwcx/astro-i18next/commit/10b40cc81329d2d34f9cd9e37f1aa16145812449))
+- add LanguageSelector component to select language from supported locales
+  ([ad3fe2a](https://github.com/jeffwcx/astro-i18next/commit/ad3fe2af6895a993f94e414757269d86aefc8451))
+- add option to show the default locale in the url
+  ([#51](https://github.com/jeffwcx/astro-i18next/issues/51))
+  ([ea939db](https://github.com/jeffwcx/astro-i18next/commit/ea939db76114ed0ffb5efec452d6fcfaefe8962c)),
+  closes [#54](https://github.com/jeffwcx/astro-i18next/issues/54)
+- add showFlag attribute to LanguageSelector to display the flag emoji or not
+  ([a4b2f98](https://github.com/jeffwcx/astro-i18next/commit/a4b2f988b1772056e10812c10c906af3da5716bc))
+- add support for route translations
+  ([db5200b](https://github.com/jeffwcx/astro-i18next/commit/db5200b69bb79ae1a7bb9d60c05aee44e46e948d)),
+  closes [#50](https://github.com/jeffwcx/astro-i18next/issues/50)
+  [#29](https://github.com/jeffwcx/astro-i18next/issues/29)
+- add Trans component to interpolate translation strings with its contents
+  ([14ff1bd](https://github.com/jeffwcx/astro-i18next/commit/14ff1bd0258e1d860fc188cfee941338787b5f4d))
+- add utility function to localize path + improve components and overall DX
+  ([d230f00](https://github.com/jeffwcx/astro-i18next/commit/d230f002183bccad88230d947d4c981e2792b2ed))
+- Allow astro versions greater than 1.0.0 as peer dependency.
+  ([0205d41](https://github.com/jeffwcx/astro-i18next/commit/0205d41d282848bbe9b0ac153a4b024438e5ca65))
+- allow implicit key for <Trans> when omitting i18nKey prop
+  ([ff14354](https://github.com/jeffwcx/astro-i18next/commit/ff14354b81cf2d5462a3831a2f2cfabbc53e4dc0)),
+  closes [#53](https://github.com/jeffwcx/astro-i18next/issues/53)
+- allow passing functions to i18next init
+  ([ed7c721](https://github.com/jeffwcx/astro-i18next/commit/ed7c72117ccc363a8174681b990f75c67986dcd6))
+- allow using i18next plugins directly in the config
+  ([114ccd7](https://github.com/jeffwcx/astro-i18next/commit/114ccd759d80c7bdd017f787cdbd557f0721e817))
+- **cli:** add generate command to create localized astro pages
+  ([17982cf](https://github.com/jeffwcx/astro-i18next/commit/17982cf1ef152c913230094b017828f1a77073da)),
+  closes [#13](https://github.com/jeffwcx/astro-i18next/issues/13)
+- **cli:** add success feedback to generate command + add generated filepaths
+  with verbose
+  ([9e3d4f5](https://github.com/jeffwcx/astro-i18next/commit/9e3d4f57f31913e4f8646c1003a5f9379d5cae2a))
+- **language-selector:** add languageMapping prop to rename languages of choice
+  ([20d94e4](https://github.com/jeffwcx/astro-i18next/commit/20d94e4b1b221cad02d15b68124dc9b03367bfb9)),
+  closes [#116](https://github.com/jeffwcx/astro-i18next/issues/116)
+- load translation resources automatically + add example website
+  ([48dd98e](https://github.com/jeffwcx/astro-i18next/commit/48dd98e6d95a824abd7ca521f786d1802cec0db5))
+- make base path for i18next resources configurable
+  ([4e4b057](https://github.com/jeffwcx/astro-i18next/commit/4e4b0572fa5bf8ac0e81ae5b0b374928589a9f6c))
+- move astro-i18next config in a standalone file to load it for CLI commands
+  ([bdf2408](https://github.com/jeffwcx/astro-i18next/commit/bdf240857e1fbb0d7b13482cbbd39eedfe768119))
+- **plugins:** set i18next plugins config for both server and client side setups
+  ([5ddb1c7](https://github.com/jeffwcx/astro-i18next/commit/5ddb1c779367148fb0e690cd6503cba32d2bee59)),
+  closes [#68](https://github.com/jeffwcx/astro-i18next/issues/68)
+- prefix language name with language flag emoji using language-flag-colors
+  ([7e09d93](https://github.com/jeffwcx/astro-i18next/commit/7e09d93d45538ce90ebdc2d16a6a3ce5be782211))
+- simplified API + instanciate i18next both in server and client side
+  ([ed44510](https://github.com/jeffwcx/astro-i18next/commit/ed445109ea7aa93fa0b2130d159c91a48f2e5869)),
+  closes [#57](https://github.com/jeffwcx/astro-i18next/issues/57)
+  [#46](https://github.com/jeffwcx/astro-i18next/issues/46)
+  [#37](https://github.com/jeffwcx/astro-i18next/issues/37)
+
+### Reverts
+
+- **i18next-peer:** reset i18next as package dependency
+  ([7906e19](https://github.com/jeffwcx/astro-i18next/commit/7906e1936b577d54ae137451cf53f38d1f13f60f)),
+  closes [#131](https://github.com/jeffwcx/astro-i18next/issues/131)
+
+### BREAKING CHANGES
+
+- - defaultLanguage is now defaultLocale
+
+* supportedLanguages is now locales
+* i18next config is now split into two configs: `i18nextServer` and
+  `i18nextClient`
+
+- config is now a standalone file + some property names have changed for better
+  clarity and consistency
+
+* `baseLocale` is now `defaultLanguage`
+* `supportedLocales` is now `supportedLanguages``
+
+- `baseLanguage` is now `baseLocale` in config options
+- rename i18nextConfig to i18next in config + remove className and baseLanguage
+  props for LanguageSelector
+
 # [1.0.0-beta.21](https://github.com/yassinedoghri/astro-i18next/compare/v1.0.0-beta.20...v1.0.0-beta.21) (2023-03-09)
 
 ### Bug Fixes
